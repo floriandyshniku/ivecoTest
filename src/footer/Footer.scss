@@ -1,0 +1,198 @@
+.footer-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-wrapper-footer {
+    padding-left: 32px;
+
+}
+
+.toolbar-footer {
+    // background-color: yellowgreen;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+
+    p {
+        margin-right: 32px;
+        color: white;
+        font-size: 14px;
+    }
+
+}
+
+.footer-stage {
+    // display: flex;
+    justify-content: space-between;
+    margin-left: 32px;
+    width: calc(100% - 64px);
+
+    p {
+        border: none;
+        border-bottom: 1px solid gray;
+        color: #9E9E9E;
+        padding-bottom: 10px;
+        display: none;
+    }
+
+    h3 {
+        border: none;
+        border-bottom: 1px solid gray;
+        padding-bottom: 10px;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    button {
+        background-color: #1A61FF;
+    }
+}
+
+.follow-us-wrapper {
+    display: flex;
+    flex-direction: column;
+    // background-color: yellow;
+    gap: 40px;
+
+    img {
+        width: 20%;
+        display: none;
+    }
+
+    .fb-image {
+        margin-top: -20px;
+    }
+}
+
+.contact-us-footer {
+    margin-top: -35px;
+    width: 100%;
+    display: none;
+
+    button {
+        // width: 100%;
+        color: white;
+        position: relative;
+
+        svg {
+            position: absolute;
+            right: 10px;
+        }
+
+        path {
+            stroke: white;
+        }
+    }
+
+    button:hover {
+        background-color: #0d39fd;
+    }
+}
+
+.footer-stage-el {
+    width: 100%;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+    color: #9E9E9E;
+    margin-left: 24px;
+
+    p {
+        font-size: 8px;
+        margin-right: 24px;
+    }
+}
+
+.maintenance-info {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+
+
+}
+
+.cookies {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+
+}
+
+.purchase-wrapper {
+    svg {
+        width: 13px;
+        transform: rotate(-45deg);
+    }
+
+    path {
+        stroke: #9E9E9E;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .icon-wrapper-footer {
+        img {
+            height: 30px;
+        }
+    }
+
+    .toolbar-footer {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .footer-stage {
+        display: flex;
+
+        p {
+            display: block;
+        }
+    }
+
+    .footer-stage-el {
+        width: 20%;
+    }
+    .follow-us-wrapper{
+        img{
+            display: block;
+            width: 85px;
+        }
+    }
+    .follow-us-wrapper .fb-image {
+        margin-top: -25px;
+    }
+    .contact-us-footer {
+        margin-top: -35px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        button{
+            svg{
+                position: absolute;
+                right: 10px;
+            }
+        }
+    }
+    .maintenance-info{
+       
+        p{
+            font-size: 12px;
+        }
+    }
+    .cookies{
+        p{
+            font-size: 12px;
+        }
+    }
+    .company-info{
+        padding-bottom: 25px;
+    }
+}
