@@ -1,4 +1,4 @@
-import "./Stage2.scss"
+import "./Vehicle-stage.scss"
 import React from 'react'
 import van from "../../Images/daily-van.png"
 import cab from "../../Images/daily-cab.png"

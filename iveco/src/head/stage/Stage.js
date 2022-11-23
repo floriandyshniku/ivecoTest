@@ -43,7 +43,7 @@ function Stage() {
               return <a href="/" key="{item}">{text}</a>
              })}
         </div>
-        <div className="title-conatiner">
+        <div className="page-title-module">
           <div className="img-wrapper">
             <img src={blueEl} alt="" />
           </div>
@@ -56,7 +56,7 @@ function Stage() {
           <img src={vehicles} alt="" />
         </div>
         <div className="images-content">
-          <img src={dailyLogo} alt="" className='daily-logo'/>
+          <img src={dailyLogo} alt="" className='images-content'/>
           <img src={amazonLogo} alt="" />
         </div>
         <div className="scroll-el">
@@ -71,7 +71,7 @@ function Stage() {
               return <a href="/" key="{item}">{text}</a>
              })}
         </div>
-        <div className="title-conatiner">
+        <div className="page-title-module">
           <div className="img-wrapper">
             <img src={blueEl} alt="" />
           </div>
@@ -84,7 +84,7 @@ function Stage() {
           <img src={vehicles} alt="" />
         </div>
         <div className="images-content">
-          <img src={dailyLogo} alt="" className='daily-logo'/>
+          <img src={dailyLogo} alt="" className='images-content'/>
           <img src={amazonLogo} alt="" />
         </div>
         <div className="scroll-el">
@@ -99,7 +99,7 @@ function Stage() {
               return <a href="/" key="{item}">{text}</a>
              })}
         </div>
-        <div className="title-conatiner">
+        <div className="page-title-module">
           <div className="img-wrapper">
             <img src={blueEl} alt="" />
           </div>
@@ -112,7 +112,7 @@ function Stage() {
           <img src={vehicles} alt="" />
         </div>
         <div className="images-content">
-          <img src={dailyLogo} alt="" className='daily-logo'/>
+          <img src={dailyLogo} alt="" className='images-content'/>
           <img src={amazonLogo} alt="" />
         </div>
         <div className="scroll-el">
@@ -127,7 +127,7 @@ function Stage() {
               return <a href="/" key="{item}">{text}</a>
              })}
         </div>
-        <div className="title-conatiner">
+        <div className="page-title-module">
           <div className="img-wrapper">
             <img src={blueEl} alt="" />
           </div>
@@ -140,7 +140,7 @@ function Stage() {
           <img src={vehicles} alt="" />
         </div>
         <div className="images-content">
-          <img src={dailyLogo} alt="" className='daily-logo'/>
+          <img src={dailyLogo} alt="" className='images-content'/>
           <img src={amazonLogo} alt="" />
         </div>
         <div className="scroll-el">

@@ -14,7 +14,7 @@
   background: url(../../Images/background.png);
 }
 
-.title-conatiner {
+.page-title-module {
   padding-top: 141px;
   display: flex;
   align-items: flex-end;
@@ -99,7 +99,7 @@
 }
 
 @media only screen and (max-width: 639px) {
-  .title-conatiner {
+  .page-title-module {
     padding-top: 50px;
 
     h2 {
@@ -165,7 +165,7 @@
 }
 
 @media only screen and (min-width: 639px) {
-  .title-conatiner {
+  .page-title-module {
     h2 {
       font-size: 50px;
 
@@ -206,7 +206,7 @@
 
 @media only screen and (min-width: 1024px) {
 
-  .title-conatiner {
+  .page-title-module {
     gap: 32px;
 
     h2 {
@@ -225,7 +225,7 @@
     }
   }
 
-  .images-content {
+  .logo-images{
     img {
       width: 130px;
     }

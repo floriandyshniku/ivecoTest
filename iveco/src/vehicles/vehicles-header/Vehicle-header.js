@@ -1,5 +1,5 @@
 //rfce
-import "./HeaderTwo.scss"
+import "./Vehicle-header.scss"
 import React from 'react'
 
 
@@ -16,7 +16,7 @@ function Header2() {
             <div className="title">
                 <h1 className='header-size'>Veicoli e missioni</h1>
             </div>
-            <div className="usage-elm">
+            <div className="tab-items">
                     {
                     buttonLabel.map((label) => {
                         return <button >{label}</button>
