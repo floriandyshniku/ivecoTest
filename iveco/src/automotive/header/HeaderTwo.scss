@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    // width: ;
+
     button {
         font-size: 8px;
         color: #424242;
@@ -38,30 +38,35 @@
         color: rgb(51, 106, 255);
     }
 }
+
 @media only screen and (min-width: 640px) {
-    .title{
-        h1{
+    .title {
+        h1 {
             font-size: 50px;
         }
     }
+
     .usage-elm {
         margin-top: -30px;
-        button{
+
+        button {
             font-size: 15px;
         }
     }
-  }
-  @media only screen and (min-width: 1024px) {
-    .title{
-        padding-left: 32px;
-        h1{
+}
+
+@media only screen and (min-width: 1024px) {
+    .title {
+        h1 {
             font-size: 75px;
         }
     }
+
     .usage-elm {
         margin-top: -20px;
-        button{
+
+        button {
             font-size: 18px;
         }
     }
-  }
+}

@@ -13,7 +13,7 @@ import Footer from "./footer/Footer";
 console.log("test");
 function App() {
   return (
-    <div>
+    <div  className="main-container">
       <Header />
       <Stage />
       <Header2 />

@@ -6,15 +6,7 @@ import logo from "../../Images/Iveco-logo.png"
 function Header() {
   return (
     <>
-      <section className="header">
-        {/* <div className="header-wrapper">
-          <div className="navbar">
-            
-          </div>
-          <div className="logo">
-            <img src={logo} alt=""></img>
-          </div>
-        </div> */}
+      <section className="header">   
       </section>
     </>
   );
