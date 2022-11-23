@@ -8,7 +8,6 @@
         content: none;
     }
 
-
     .slick-track {
         position: relative;
         top: 0px;
@@ -45,6 +44,8 @@
     padding: 0px 32px 2px 32px;
 
     h1 {
+        font-family: sans-serif;
+        font-weight: 300;
         font-size: 38px;
         color: white;
     }
@@ -72,11 +73,11 @@
 
     h1 {
         height: 38px;
-        font-family: Gill Sans;
+        font-family: sans-serif;
         letter-spacing: -0.02em;
         text-align: left;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 200;
         font-size: 38px;
         line-height: 146px;
         color: white;
@@ -167,7 +168,7 @@
 
     h4 {
 
-        font-family: Gill Sans;
+        font-family: sans-serif;
         font-size: 15px;
         font-weight: 300;
         line-height: 30px;

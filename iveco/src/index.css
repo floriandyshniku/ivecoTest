@@ -22,7 +22,7 @@ a{
   color: unset;
 }
 .header-size{
-  font-family: 'Gill Sans';
+  font-family: 'sans-serif';
   font-size: 38px ;
   font-style: normal;
   font-weight: 300;
@@ -34,7 +34,7 @@ a{
 .buttons{
   padding: 14px 27px 14px 20px;
   border: none;
-  font-family: 'Gill Sans';
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -45,6 +45,6 @@ a{
 }
 .main-container{
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1700px;
 }
 

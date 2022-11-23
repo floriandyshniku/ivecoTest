@@ -9,6 +9,8 @@
     line-height: 15px;
     h1{
         font-size: 38px;
+        font-family: sans-serif;
+        font-weight: 300;
         color: white;
     }
 }
@@ -87,7 +89,7 @@
     font-size: 16px;
     line-height: 24px;
     position: relative;
-    width: 30%;
+    width: 100px;
     svg{
         position: absolute;
         width: 20px;
@@ -130,6 +132,12 @@
     }
   }
   @media only screen and (min-width: 1024px) {
+    .news-header{
+        h1{
+            font-size: 75px;
+            line-height: 70px;
+        }
+    }
     .news-wrapper{
         gap: 50px;
     }
