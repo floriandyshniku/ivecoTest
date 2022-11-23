@@ -28,8 +28,6 @@
 .vehicles-properties {
     display: flex;
     justify-content: space-between;
-
-    // height: 180px;
     .vehicles-content {
         position: relative;
         display: flex;
@@ -42,19 +40,14 @@
             position: absolute;
             left: 90%;
             top: 10px;
-
-
         }
     }
 
     .vehicles-content:hover {
-
         border-bottom: 2px solid #1554FF;
-
         path {
             stroke: #1554FF;
         }
-
     }
 
     p {
@@ -73,7 +66,6 @@
     .vehicles-container {
         padding-bottom: 45px;
     }
-
     .vehicles-properties {
         // height: 130px;
         display: flex;
@@ -91,17 +83,12 @@
 
             }
         }
-
         .vehicles-content:hover {
-
             border-bottom: 1px solid #1554FF;
-
             path {
                 stroke: #1554FF;
             }
-
         }
-
         p {
             font-family: 'Gill Sans';
             font-size: 15px;

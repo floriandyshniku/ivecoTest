@@ -23,9 +23,6 @@ function Header2() {
                     })
                     }
             </div>
-            <div className="">
-                    {/* <p>{name}</p> */}
-            </div>
         </div>
     </section>
   )

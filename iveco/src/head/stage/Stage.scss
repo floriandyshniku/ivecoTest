@@ -1,7 +1,5 @@
 .stage-wrapper {
-  .slick-slider.slick-arrow.slick-prev:before {
-    // content: url(/iveco/src/Images/Arrow.svg);
-  }
+  
 
   .slick-slider.slick-arrow.slick-prev {
 
@@ -21,19 +19,13 @@
   display: flex;
   flex-direction: column;
   background: url(../../Images/background.png);
-  // gap: 200px;
-
 }
 
 .title-conatiner {
   padding-top: 141px;
-
-  // background-color: aqua;
   display: flex;
   align-items: flex-end;
   gap: 22px;
-
-  // padding-top: 130px;
   h2 {
     font-family: Gill Sans;
     font-size: 112px;
@@ -54,6 +46,7 @@
     text-align: left;
 
   }
+ 
 }
 
 .img-wrapper {
@@ -75,7 +68,6 @@
 }
 
 .nav-bar {
-  // background-color: yellowgreen;
   padding-left: 52px;
   padding-top: 26px;
   padding-bottom: 26px;
@@ -86,7 +78,7 @@
     font-weight: 500;
     letter-spacing: 0em;
     text-align: center;
-    margin-right: 40px;
+    margin-right: 25px;
     color: white;
   }
 }
@@ -172,11 +164,11 @@
   }
 
   .images-content {
-    padding-left: 16px;
+    padding-left: 32px;
 
     img {
       margin-right: 16px;
-      width: 100px;
+      width: 50px;
     }
 
     .daily-logo {

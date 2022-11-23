@@ -37,9 +37,13 @@
     button:hover {
         background-color: #0618bb;
     }
+    
 }
 
 .card-carousel-content {
+    .slick-track{
+        left: 17%;
+    }
     width: 100%;
     .card-content {
         padding-left: 24px;
@@ -47,8 +51,7 @@
 
     .card-grid-wrapper {
 
-        width:70%;
-        margin-left: 80px;
+        width:65%;
         border: 1px solid #E0E0E0;
 
         img {
@@ -107,6 +110,9 @@
     .card-carousel-content{
         padding-left: 32px;
         padding-right: 32px;
+        .slick-track{
+            left: 2%;
+        }
         .card-grid-wrapper {
             width:75%;
             margin-left: 0px;;
@@ -114,6 +120,10 @@
     }
   }
   @media only screen and (min-width: 1024px) {
+    .promotion-wrapper{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
     .card-carousel-content{
         padding-left: 32px;
         padding-right: 32px;
