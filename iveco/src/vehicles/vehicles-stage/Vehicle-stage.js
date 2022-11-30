@@ -12,9 +12,9 @@ function Stage2() {
     "all",
   ];
   const [items, setItems] = useState(data);
-  const [active, setActive] = useState(false);
-
   
+
+
   const filterItems = (categoryItem) => {
     if (categoryItem === "all") {
       setItems(data);
@@ -27,7 +27,7 @@ function Stage2() {
   };
  
   const [index, setIndex] = useState(0)
-  const first = items[index];
+  const [active, setActive] = useState(false);
   const handleClick = (active, key) => {
     setIndex(key)
     if(active === false){
@@ -89,7 +89,7 @@ function Stage2() {
           { active === true && <div className="teaser-content">
             <div className="teaser-description-content">
               <div className="teaser-title">
-                <h3>{first.name}</h3>
+                <h3>{items[index].name}</h3>
               </div>
               <div className="active-promotions">
                 <a href="/">hello</a>
