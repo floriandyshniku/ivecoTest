@@ -28,6 +28,7 @@
 .vehicles-properties {
     display: flex;
     justify-content: space-between;
+
     .vehicles-content {
         position: relative;
         display: flex;
@@ -35,6 +36,7 @@
         align-items: center;
         height: 99%;
         border-bottom: 2px solid white;
+
         span.star-svg {
             height: 50px;
             position: absolute;
@@ -45,6 +47,7 @@
 
     .vehicles-content:hover {
         border-bottom: 2px solid #1554FF;
+
         path {
             stroke: #1554FF;
         }
@@ -66,6 +69,7 @@
     .vehicles-container {
         padding-bottom: 45px;
     }
+
     .vehicles-properties {
         // height: 130px;
         display: flex;
@@ -73,9 +77,11 @@
         justify-content: space-around;
         gap: 10px;
         padding-bottom: 10px;
+
         .vehicles-content {
             border-bottom: 1px solid white;
             width: 45% !important;
+
             span.star-svg {
                 height: 26px;
                 left: 80%;
@@ -83,12 +89,15 @@
 
             }
         }
+
         .vehicles-content:hover {
             border-bottom: 1px solid #1554FF;
+
             path {
                 stroke: #1554FF;
             }
         }
+
         p {
             font-family: 'Gill Sans';
             font-size: 15px;
@@ -97,48 +106,132 @@
 
         img {
 
-            width: 100%;;
+            width: 100%;
+            ;
             height: 100px;
 
         }
     }
 }
+
 @media only screen and (min-width: 640px) {
     .vehicles-properties {
         padding-left: 32px;
         padding-right: 32px;
         display: flex;
         flex-wrap: wrap;
-        img{
+
+        img {
             width: 100%;
             height: 110px;
-        }  
+        }
     }
-    .vehicles-content{
+
+    .vehicles-content {
         width: 275px;
-        p{
+
+        p {
             font-size: 17px;
         }
-        svg{
+
+        svg {
             width: 15px;
         }
     }
 }
+
 @media only screen and (min-width: 1024px) {
-    .vehicles-content{
+    .vehicles-content {
         width: 25%;
-        p{
+
+        p {
             font-size: 16px;
         }
-        svg{
+
+        svg {
             width: 27px;
         }
     }
+
     .vehicles-properties {
         flex-wrap: nowrap;
-        img{
+
+        img {
             width: 100%;
             height: 125px;
-        }  
+        }
+    }
+
+    .teaser-content {
+        background-color: rgba(151, 150, 150, 0.062);
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 32px;
+    }
+    
+    .teaser-description-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teaser-title {
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+            font-weight: 300;
+        }
+    }
+
+    .card-module-image {
+        width: 50%;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .active-promotions {
+        margin-bottom: 15px;
+        color: #1554ff;
+    }
+
+    .tags {
+        margin-bottom: 30px;
+        height: 30px;
+        a{
+            padding: 8px 20px 8px 20px;
+            margin-right: 12px;
+            font-size: 15px;
+            color: grey;
+            background-color:white ;
+            line-height: 40px;
+        }
+    }
+
+    .teaser-buttons {
+        button{
+            padding: 6px 15px 6px 15px;
+            line-height: 22px;
+            margin-top: 10px;
+            margin-right: 15px;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+        .manifesto-butt{
+            background-color: #0048e6;
+        }
+        .manifesto-butt:hover{
+            background-color: #0400e6;
+        }
+        span{
+            color: #1554FF;
+        }
+        .read-butt:hover{
+            background-color: #424242;
+        }
     }
 }

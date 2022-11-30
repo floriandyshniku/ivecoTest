@@ -1,24 +1,42 @@
 import "./Vehicle-stage.scss";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import data from "../../data/data";
 
 function Stage2() {
-  const allCatVehicles = [...new Set(data.map((currElem) => {return currElem.category;})),"all"]
-  console.log(allCatVehicles)
+  const allCatVehicles = [
+    ...new Set(
+      data.map((currElem) => {
+        return currElem.category;
+      })
+    ),
+    "all",
+  ];
   const [items, setItems] = useState(data);
-  const [vehcilesItem, setVehiclesItem] = useState(allCatVehicles)
+  const [active, setActive] = useState(false);
+
+  
   const filterItems = (categoryItem) => {
-    if(categoryItem === "all"){
-      setItems(data)
-    }
-    else{
+    if (categoryItem === "all") {
+      setItems(data);
+    } else {
       const updatedItems = data.filter((currElem) => {
         return currElem.category === categoryItem;
       });
       setItems(updatedItems);
     }
   };
-
+ 
+  const [index, setIndex] = useState(0)
+  const first = items[index];
+  const handleClick = (active, key) => {
+    setIndex(key)
+    if(active === false){
+      active = true
+    } else{
+      active = false
+    }
+    setActive(active)
+  };
   return (
     <section className="vehicles-container">
       <div className="vehicles-wrapper">
@@ -27,7 +45,7 @@ function Stage2() {
             return <button onClick={() => filterItems({curCatElem})}>{curCatElem}</button>
 
           })} */}
-          
+
           <button onClick={() => filterItems("all")}>Tutti i veicoli</button>
           <button onClick={() => filterItems("B")}>Tutti i veicoli</button>
           <button onClick={() => filterItems("B")}>Tutti i veicoli</button>
@@ -41,10 +59,10 @@ function Stage2() {
             <p>Light 3.3-7.2t</p>
           </div>
           <div className="vehicles-properties">
-            {items.map((elem) => {
-              const { name, image } = elem;
+            {items.map((elem, key) => {
+                const { name, image} = elem;
               return (
-                <div className="vehicles-content">
+                <div className="vehicles-content"  onClick={event => handleClick(active, key)} key={key}>
                   <img src={image} alt="" />
                   <p>{name}</p>
                   <span className="star-svg">
@@ -64,16 +82,44 @@ function Stage2() {
                       />
                     </svg>
                   </span>
-                </div>
+                </div>   
               );
             })}
           </div>
+          { active === true && <div className="teaser-content">
+            <div className="teaser-description-content">
+              <div className="teaser-title">
+                <h3>{first.name}</h3>
+              </div>
+              <div className="active-promotions">
+                <a href="/">hello</a>
+              </div>
+              <div className="tags">
+                <a href="/">Municipality</a>
+                <a href="/">Municipality</a>
+                <a href="/">Municipality</a>
+              </div>
+              <div className="teaser-buttons">
+                <button className="read-butt">Read more</button>
+                <button className="manifesto-butt">
+                  Read the manifesto
+                </button>
+                <span>Dealer locator</span>
+              </div>
+            </div>
+            <div className="card-module-image">
+              <img
+                src="/static/media/teaser.0a67aaea3a82986d72c7.jpeg"
+                alt=""
+              />
+            </div>
+          </div>}
           <div className="description-label">
             <p>Medium 3.3-7.2t</p>
           </div>
           <div className="vehicles-properties">
             {items.map((elem) => {
-              const { name, image} = elem;
+              const { name, image } = elem;
               return (
                 <div className="vehicles-content">
                   <img src={image} alt="" />

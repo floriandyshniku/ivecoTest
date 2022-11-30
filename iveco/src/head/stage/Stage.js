@@ -76,7 +76,7 @@ function Stage() {
             <img src={blueEl} alt="" />
           </div>
           <div className="title-content">
-            <h2>Driver Pal with Alexa</h2>
+            <h2>Driver Pal </h2>
             <p>Maximum long description made by two lines of text</p>
           </div>
         </div>
@@ -104,7 +104,7 @@ function Stage() {
             <img src={blueEl} alt="" />
           </div>
           <div className="title-content">
-            <h2>Driver Pal with Alexa</h2>
+            <h2>Lorem ipsum dolor</h2>
             <p>Maximum long description made by two lines of text</p>
           </div>
         </div>
@@ -132,7 +132,7 @@ function Stage() {
             <img src={blueEl} alt="" />
           </div>
           <div className="title-content">
-            <h2>Driver Pal with Alexa</h2>
+            <h2>Title</h2>
             <p>Maximum long description made by two lines of text</p>
           </div>
         </div>
