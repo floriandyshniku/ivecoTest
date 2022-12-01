@@ -11,7 +11,7 @@ function Footer() {
             <div className="toolbar-footer">
                 
                     {headerTexts.map(items => {
-                       return <p>{items}</p> 
+                       return <p key={items}>{items}</p> 
                     })}
                 
             </div>

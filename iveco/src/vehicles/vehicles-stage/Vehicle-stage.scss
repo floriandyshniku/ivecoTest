@@ -24,6 +24,82 @@
         font-family: Roboto;
     }
 }
+.teaser-content {
+    background-color: rgba(151, 150, 150, 0.062);
+    height: 250px;
+    display: none;
+    justify-content: space-between;
+    padding-left: 32px;
+    // transition: height .3s,opacity .8s;
+    
+}
+.teaser-content.open{
+    display: flex;
+    transition: height .3s,opacity .8s;
+}
+.teaser-description-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.teaser-title {
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+        font-weight: 300;
+    }
+}
+.card-module-image {
+    width: 50%;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.active-promotions {
+    margin-bottom: 15px;
+    color: #1554ff;
+}
+
+.tags {
+    margin-bottom: 30px;
+    height: 30px;
+    a{
+        padding: 4px 8px 4px 4px;
+        margin-right: 3px;
+        font-size: 12px;
+        color: grey;
+        background-color:white ;
+        line-height: 40px;
+    }
+}
+
+.teaser-buttons {
+    button{
+        padding: 4px 8px 4px 8px;
+        line-height: 15px;
+        margin-top: 10px;
+        margin-right: 15px;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+    .manifesto-butt{
+        background-color: #0048e6;
+    }
+    .manifesto-butt:hover{
+        background-color: #0400e6;
+    }
+    span{
+        color: #1554FF;
+        font-size: 14px;
+    }
+    .read-butt:hover{
+        background-color: #424242;
+    }
+}
 
 .vehicles-properties {
     display: flex;
@@ -163,26 +239,11 @@
     }
 
     .teaser-content {
-        background-color: rgba(151, 150, 150, 0.062);
         height: 250px;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 32px;
     }
     
-    .teaser-description-content {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-    }
 
-    .teaser-title {
-        h3 {
-            font-size: 2rem;
-            margin-bottom: 5px;
-            font-weight: 300;
-        }
-    }
+   
 
     .card-module-image {
         width: 50%;
@@ -191,11 +252,6 @@
             height: 100%;
             width: 100%;
         }
-    }
-
-    .active-promotions {
-        margin-bottom: 15px;
-        color: #1554ff;
     }
 
     .tags {
@@ -215,23 +271,7 @@
         button{
             padding: 6px 15px 6px 15px;
             line-height: 22px;
-            margin-top: 10px;
-            margin-right: 15px;
-            background-color: black;
-            color: white;
-            border: none;
-        }
-        .manifesto-butt{
-            background-color: #0048e6;
-        }
-        .manifesto-butt:hover{
-            background-color: #0400e6;
-        }
-        span{
-            color: #1554FF;
-        }
-        .read-butt:hover{
-            background-color: #424242;
+            
         }
     }
 }

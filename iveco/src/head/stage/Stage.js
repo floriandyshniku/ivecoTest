@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Stage() {
-  const headerTexts = ["Daily", "eDaily", "Eurocargo", "S-Way", "S-Way Natural Gas", "X-Way", "T-Way", "Bus", "Camper"]
+  
 
   const elementRef = useRef(null)
   const scrollBottom = () => {
@@ -38,11 +38,7 @@ function Stage() {
     <Slider {...settings}>
           <div>
           <div className="slide-container">
-        <div className="nav-bar">
-        {headerTexts.map((text) => {
-              return <a href="/" key="{item}">{text}</a>
-             })}
-        </div>
+        
         <div className="page-title-module">
           <div className="img-wrapper">
             <img src={blueEl} alt="" />
@@ -66,11 +62,6 @@ function Stage() {
           </div>
           <div>
           <div className="slide-container">
-        <div className="nav-bar">
-        {headerTexts.map((text) => {
-              return <a href="/" key="{item}">{text}</a>
-             })}
-        </div>
         <div className="page-title-module">
           <div className="img-wrapper">
             <img src={blueEl} alt="" />
@@ -94,11 +85,6 @@ function Stage() {
           </div>
           <div>
           <div className="slide-container">
-        <div className="nav-bar">
-        {headerTexts.map((text) => {
-              return <a href="/" key="{item}">{text}</a>
-             })}
-        </div>
         <div className="page-title-module">
           <div className="img-wrapper">
             <img src={blueEl} alt="" />
@@ -122,11 +108,6 @@ function Stage() {
           </div>
           <div>
           <div className="slide-container">
-        <div className="nav-bar">
-        {headerTexts.map((text) => {
-              return <a href="/" key="{item}">{text}</a>
-             })}
-        </div>
         <div className="page-title-module">
           <div className="img-wrapper">
             <img src={blueEl} alt="" />

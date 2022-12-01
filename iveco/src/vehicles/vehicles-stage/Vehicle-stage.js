@@ -1,7 +1,7 @@
 import "./Vehicle-stage.scss";
 import React, { useRef, useState } from "react";
 import data from "../../data/data";
-
+import image from "../../Images/teaser.jpeg"
 function Stage2() {
   const allCatVehicles = [
     ...new Set(
@@ -11,8 +11,10 @@ function Stage2() {
     ),
     "all",
   ];
+  const [open, setOpen] = useState(false)
   const [items, setItems] = useState(data);
-  
+  let teaser = document.getElementsByClassName("teaser-content")
+   console.log(teaser)
 
 
   const filterItems = (categoryItem) => {
@@ -25,17 +27,21 @@ function Stage2() {
       setItems(updatedItems);
     }
   };
- 
   const [index, setIndex] = useState(0)
   const [active, setActive] = useState(false);
-  const handleClick = (active, key) => {
-    setIndex(key)
-    if(active === false){
-      active = true
-    } else{
-      active = false
+  const handleClick= (open, key) => {
+    if(open === false){
+        setOpen(true)
     }
-    setActive(active)
+    else if(index !== key ){
+      // setOpen(false)
+      setOpen(true)
+     
+    } 
+    else{
+      setOpen(false)
+    }
+    setIndex(key)
   };
   return (
     <section className="vehicles-container">
@@ -62,7 +68,7 @@ function Stage2() {
             {items.map((elem, key) => {
                 const { name, image} = elem;
               return (
-                <div className="vehicles-content"  onClick={event => handleClick(active, key)} key={key}>
+                <div className="vehicles-content"  onClick={event => handleClick(open, key)} key={key}>
                   <img src={image} alt="" />
                   <p>{name}</p>
                   <span className="star-svg">
@@ -84,36 +90,41 @@ function Stage2() {
                   </span>
                 </div>   
               );
-            })}
+            })
+            }
           </div>
-          { active === true && <div className="teaser-content">
-            <div className="teaser-description-content">
-              <div className="teaser-title">
-                <h3>{items[index].name}</h3>
+          {
+            items.map((i, key) =>{
+              return  <div className={open && key === index ? "teaser-content open": "teaser-content"} id={key} key={key} >
+              <div className="teaser-description-content">
+                <div className="teaser-title">
+                  <h3>{items[index].name}</h3>
+                </div>
+                <div className="active-promotions">
+                  <a href="/">hello</a>
+                </div>
+                <div className="tags">
+                  <a href="/">Municipality</a>
+                  <a href="/">Municipality</a>
+                  <a href="/">Municipality</a>
+                </div>
+                <div className="teaser-buttons">
+                  <button className="read-butt">Read more</button>
+                  <button className="manifesto-butt">
+                    Read the manifesto
+                  </button>
+                  <span>Dealer locator</span>
+                </div>
               </div>
-              <div className="active-promotions">
-                <a href="/">hello</a>
-              </div>
-              <div className="tags">
-                <a href="/">Municipality</a>
-                <a href="/">Municipality</a>
-                <a href="/">Municipality</a>
-              </div>
-              <div className="teaser-buttons">
-                <button className="read-butt">Read more</button>
-                <button className="manifesto-butt">
-                  Read the manifesto
-                </button>
-                <span>Dealer locator</span>
+              <div className="card-module-image">
+                <img
+                  src="/static/media/teaser.0a67aaea3a82986d72c7.jpeg"
+                  alt=""
+                />
               </div>
             </div>
-            <div className="card-module-image">
-              <img
-                src="/static/media/teaser.0a67aaea3a82986d72c7.jpeg"
-                alt=""
-              />
-            </div>
-          </div>}
+            })
+          }
           <div className="description-label">
             <p>Medium 3.3-7.2t</p>
           </div>

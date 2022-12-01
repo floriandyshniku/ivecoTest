@@ -61,7 +61,7 @@
         transition: 0.5s;
     }
     img:hover{
-        cursor: pointer;
+        cursor: url(https://ivg001.westeurope.cloudapp.azure.com/dist/ivgcorporate/static/media/CustomPointerZoom.3f20d2cb.svg) 40 40,pointer;
         transform: scale(1.1);
     }
 }

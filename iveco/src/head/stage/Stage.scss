@@ -6,7 +6,26 @@
   .slick-track {
     height: auto;
   }
+  .slick-next {
+    right: 70px;
+    top: 90%;
 }
+  .slick-next::before {
+    content: url(../../Images/Vector.svg);
+}
+.slick-prev{
+  z-index: 1;
+  left: auto;
+  right: 100px;
+  top: 90%;
+  
+}
+.slick-prev:before {
+  content: url(../../Images/Vector-prev.svg);
+  
+}
+}
+
 
 .slide-container {
   display: flex;
@@ -59,21 +78,7 @@
   }
 }
 
-.nav-bar {
-  padding-left: 52px;
-  padding-top: 26px;
-  padding-bottom: 26px;
 
-  a {
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-right: 25px;
-    color: white;
-  }
-}
 
 .iveco-content {
   display: flex;
@@ -235,5 +240,8 @@
     img {
       width: 25px;
     }
+  }
+  .nav-bar{
+    
   }
 }
