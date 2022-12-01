@@ -8,7 +8,7 @@
   }
   .slick-next {
     right: 70px;
-    top: 90%;
+    top: 87.5%;
 }
   .slick-next::before {
     content: url(../../Images/Vector.svg);
@@ -16,8 +16,8 @@
 .slick-prev{
   z-index: 1;
   left: auto;
-  right: 100px;
-  top: 90%;
+  right: 150px;
+  top: 87.5%;
   
 }
 .slick-prev:before {
@@ -92,6 +92,7 @@
 .images-content {
   padding-left: 32px;
   display: flex;
+  position: relative;
 
   img {
     margin-right: 32px;
@@ -100,6 +101,18 @@
   .daily-logo {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+.index-wrapper{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  right: 100px;
+  width: 40px;
+  top: -13px;
+  p{
+    color: white;
   }
 }
 
