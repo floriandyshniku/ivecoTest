@@ -26,15 +26,19 @@
 }
 .teaser-content {
     background-color: rgba(151, 150, 150, 0.062);
-    height: 250px;
-    display: none;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
     justify-content: space-between;
     padding-left: 32px;
-    // transition: height .3s,opacity .8s;
+    transition: height .3s,opacity .8s;
     
 }
 .teaser-content.open{
     display: flex;
+    height: 250px;
+    visibility: visible;
+    opacity: 1;
     transition: height .3s,opacity .8s;
 }
 .teaser-description-content {
@@ -121,13 +125,13 @@
         }
     }
 
-    .vehicles-content:hover {
-        border-bottom: 2px solid #1554FF;
+    // .vehicles-content {
+    //     border-bottom: 2px solid #1554FF;
 
-        path {
-            stroke: #1554FF;
-        }
-    }
+    //     path {
+    //         stroke: #1554FF;
+    //     }
+    // }
 
     p {
         font-family: 'Gill Sans';
@@ -237,14 +241,7 @@
             height: 125px;
         }
     }
-
-    .teaser-content {
-        height: 250px;
-    }
     
-
-   
-
     .card-module-image {
         width: 50%;
 
